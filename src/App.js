@@ -1,14 +1,13 @@
 import Layout from "./components/layout/Layout";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import HomePage from "./components/pages/HomePage";
 function App() {
   return (
-      <Layout >
+      <Layout>
         <Routes>
-          <Route path="/" element={<HomePage/>} />
+          <Route path="/" element={<HomePage />} />
         </Routes>
       </Layout>
   );
 }
-
 export default App;

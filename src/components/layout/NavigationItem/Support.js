@@ -1,5 +1,5 @@
 const Support = () => {
-    return ( <div>
+    return ( <div className=" w-1/2 h-screen">
         this is Support page
     </div> );
 }

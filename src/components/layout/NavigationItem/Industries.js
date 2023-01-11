@@ -1,5 +1,5 @@
 const Industries = () => {
-    return ( <div>
+    return ( <div className=" w-1/2 h-screen ">
         this is Industries 
     </div> );
 }

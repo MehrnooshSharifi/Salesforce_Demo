@@ -37,8 +37,9 @@ const DesktopNavigation = () => {
               mouseEnterDelay={0}
               contentStyle={{ padding: "0px", border: "none" }}
               arrow={false}
+              key={item.id}
             >
-              <div className="bg-white w-auto  h-28 mt-7 overflow-auto ">
+              <div className="bg-white w-auto h-28 mt-6 p-4 overflow-auto ">
                 {item.component}
               </div>
             </Popup>
