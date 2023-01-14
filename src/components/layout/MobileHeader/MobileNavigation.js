@@ -78,6 +78,7 @@ const MobileNavigation = () => {
               <TbWorld className="w-6 h-6  hover:text-blue-600" />
               <NavLink className="ml-1 font-medium">Region</NavLink>
             </div>
+            <span className="text-xs flex justify-center mt-2 font-bold">09102456878 (IR)</span>
           </div>
         </div>
       ) : (
