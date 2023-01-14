@@ -31,7 +31,7 @@ const DesktopNavigation = () => {
                 </button>
               }
               position="bottom left"
-              on="hover"
+              on="click"
               closeOnDocumentClick
               mouseLeaveDelay={100}
               mouseEnterDelay={0}
