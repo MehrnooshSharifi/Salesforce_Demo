@@ -6,7 +6,7 @@ const Layout = ({ children}) => {
   return (
     <>
       <DesktopHeader />
-      <MobileHeader/>
+      <MobileHeader />
       {children}
       <Footer />
     </>

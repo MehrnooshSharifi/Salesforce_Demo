@@ -13,6 +13,7 @@ import { useState } from "react";
 import { TbWorld } from "react-icons/tb";
 import { FaUserAlt } from "react-icons/fa";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import { AiOutlineRight } from "react-icons/ai";
 const items = [
   { id: 1, name: "Product", component: <Product /> },
   { id: 2, name: "Industries", component: <Industries /> },
@@ -22,10 +23,10 @@ const items = [
   { id: 6, name: "Salesforce", component: <Salesforce /> },
 ];
 const MobileNavigation = () => {
+  const [isShow, setIsShow] = useState(false);
   const clickHandler = () => {
     setIsShow(!isShow);
   };
-  const [isShow, setIsShow] = useState(false);
   return (
     <nav className=" flex items-center xl:hidden w-2/3 mr-16 relative">
       <div
@@ -36,13 +37,16 @@ const MobileNavigation = () => {
         <AiOutlineClose className={` w-5 h-5 ${isShow ? "block" : "hidden"}`} />
       </div>
       {isShow ? (
-        <div className=" flex flex-col absolute mt-[264px] bg-white overflow-y-auto h-52">
+        <div className=" flex flex-col absolute mt-[378px] bg-white overflow-y-auto h-80 p-4 ">
           {items.map((item) => {
             return (
               <Popup
                 trigger={
                   <button className="cursor-pointer text-lg font-bold hover:text-blue-600 py-2">
-                    {item.name}
+                    <div className="flex items-center justify-between w-80">
+                      <div>{item.name}</div>
+                      <AiOutlineRight/>
+                    </div>
                   </button>
                 }
                 position="right center"
@@ -54,7 +58,7 @@ const MobileNavigation = () => {
                 arrow={false}
                 key={item.id}
               >
-                <div className="w-auto bg-white h-28 mt-14 p-4 overflow-auto ">
+                <div isShow={isShow} className="w-auto bg-white h-28 mt-14 p-4 overflow-auto ">
                   {item.component}
                 </div>
               </Popup>
@@ -78,7 +82,7 @@ const MobileNavigation = () => {
               <TbWorld className="w-6 h-6  hover:text-blue-600" />
               <NavLink className="ml-1 font-medium">Region</NavLink>
             </div>
-            <span className="text-xs flex justify-center mt-2 font-bold">09102456878 (IR)</span>
+            <span className="text-sm flex justify-center mt-2 font-bold">09102456878 (IR)</span>
           </div>
         </div>
       ) : (
