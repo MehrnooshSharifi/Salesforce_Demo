@@ -1,6 +1,6 @@
 const Industries = () => {
     return ( <div className=" w-1/2 h-screen ">
-        this is Industries 
+        this is Industries page
     </div> );
 }
  
