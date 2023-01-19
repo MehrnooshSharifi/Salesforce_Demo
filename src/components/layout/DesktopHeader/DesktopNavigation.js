@@ -30,7 +30,7 @@ const DesktopNavigation = () => {
                   {item.name}
                 </button>
               }
-              position="bottom center"
+              position="bottom left"
               on="click"
               closeOnDocumentClick
               mouseLeaveDelay={100}
@@ -39,7 +39,7 @@ const DesktopNavigation = () => {
               arrow={false}
               key={item.id}
             >
-              <div className="bg-red-300 w-auto h-60 mt-6 p-4 overflow-auto ">
+              <div className=" bg-gray-50 shadow-lg rounded-md w-auto h-72 mt-6 p-4 -ml-36 overflow-auto ">
                 {item.component}
               </div>
             </Popup>
