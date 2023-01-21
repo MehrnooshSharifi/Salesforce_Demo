@@ -37,13 +37,13 @@ const MobileNavigation = () => {
         <AiOutlineClose className={` w-5 h-5 ${isShow ? "block" : "hidden"}`} />
       </div>
       {isShow ? (
-        <div className=" flex flex-col absolute mt-[378px] bg-white shadow-lg rounded-md overflow-y-auto h-80 p-4 ">
+        <div className=" flex flex-col absolute mt-[370px] w-60 bg-white  shadow-lg rounded-md overflow-y-auto h-80 p-4 sm:min-w-min -ml-8 ">
           {items.map((item) => {
             return (
               <Popup
                 trigger={
                   <button className="cursor-pointer text-lg font-bold hover:text-blue-600 py-2">
-                    <div className="flex items-center justify-between w-80">
+                    <div className="flex items-center justify-between w-50 text-lg ">
                       <div>{item.name}</div>
                       <AiOutlineRight/>
                     </div>
@@ -58,13 +58,13 @@ const MobileNavigation = () => {
                 arrow={false}
                 key={item.id}
               >
-                <div isShow={isShow} className="w-auto -ml-56 bg-gray-50 rounded-md shadow-lg  h-28 mt-14 p-4 overflow-auto ">
+                <div isShow={isShow} className="w-auto -ml-30 bg-gray-200 rounded-md shadow-lg h-80 xl:h-28  mt-40 p-4 overflow-auto ">
                   {item.component}
                 </div>
               </Popup>
             );
           })}
-          <div className="mt-6">
+          <div className="mt-6 text-lg flex flex-col -ml-3 ">
             <div className="cursor-pointer py-2 px-3 flex items-center hover:bg-blue-100 hover:rounded-3xl hover:text-blue-600">
               <BsFillTelephoneFill />
               <NavLink
@@ -79,8 +79,8 @@ const MobileNavigation = () => {
               <NavLink className="ml-1 font-medium">Login</NavLink>
             </div>
             <div className="cursor-pointer py-2 px-3 flex items-center hover:bg-blue-100 hover:rounded-3xl hover:text-blue-600">
-              <TbWorld className="w-6 h-6  hover:text-blue-600" />
-              <NavLink className="ml-1 font-medium">Region</NavLink>
+              <TbWorld className="w-6 h-6  hover:text-blue-600 -ml-1" />
+              <NavLink className=" font-medium">Region</NavLink>
             </div>
             <span className="text-sm flex justify-center mt-2 font-bold">09102456878 (IR)</span>
           </div>
@@ -88,7 +88,7 @@ const MobileNavigation = () => {
       ) : (
         ""
       )}
-      <ul className="flex   text-lg font-medium text-slate-800 justify-between items-center">
+      <ul className="flex text-lg font-medium text-slate-800 justify-between items-center">
         <NavLink to="/" className="cursor-pointer shrink-0">
           <img src={image} alt="logo" className="w-11 h-15 " />
         </NavLink>
