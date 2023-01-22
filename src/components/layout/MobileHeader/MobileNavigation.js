@@ -37,7 +37,7 @@ const MobileNavigation = () => {
         <AiOutlineClose className={` w-5 h-5 ${isShow ? "block" : "hidden"}`} />
       </div>
       {isShow ? (
-        <div className=" flex flex-col absolute mt-[370px] w-60 bg-white  shadow-lg rounded-md overflow-y-auto h-80 p-4 sm:min-w-min -ml-8 ">
+        <div className=" flex flex-col absolute mt-[370px] md:w-52 bg-white  shadow-lg rounded-md overflow-y-auto h-80 p-4  -ml-8 ">
           {items.map((item) => {
             return (
               <Popup
@@ -58,7 +58,7 @@ const MobileNavigation = () => {
                 arrow={false}
                 key={item.id}
               >
-                <div isShow={isShow} className="w-auto -ml-30 bg-gray-200 rounded-md shadow-lg h-80 xl:h-28  mt-40 p-4 overflow-auto ">
+                <div isShow={isShow} className="w-auto shrink-0 -ml-30 bg-white rounded-md shadow-lg h-48 xl:h-28  mt-40 p-4 overflow-auto ">
                   {item.component}
                 </div>
               </Popup>

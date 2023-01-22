@@ -29,7 +29,7 @@ const products = [
 const Products = () => {
   return (
     <div className="h-screen">
-      <div className="flex flex-col lg:px-12 xl:px-30 lg:py-6 ">
+      <div className="flex flex-col xl:px-10 lg:py-6 ">
         <h1 className=" text-2xl xl:text-4xl font-bold text-blue-900 mb-6">Products</h1>
         <div className="flex items-center  hover:bg-blue-100 hover:text-blue-900 px-2 hover:rounded-lg">
           <div className="bg-white shadow-2xl w-7 h-7 rounded-full mr-2 flex justify-center items-center">
@@ -37,8 +37,8 @@ const Products = () => {
           </div>
           <Popup
             trigger={
-              <button className=" cursor-pointer text-sm lg:text-lg font-bold hover:text-blue-600 py-2">
-                <div className="flex items-center justify-between w-80 text-gray-500">
+              <button className=" cursor-pointer text-sm xl:text-lg font-bold hover:text-blue-600 py-2">
+                <div className="flex items-center justify-between w-60 lg:w-80 text-gray-500">
                   <div>Customer 360</div>
                   <AiOutlineRight />
                 </div>
@@ -59,11 +59,11 @@ const Products = () => {
         </div>
         {products.map((product) => {
           return (
-            <div className="flex items-center  hover:bg-blue-100 hover:text-blue-900 p-2 hover:rounded-lg">
+            <div className=" flex items-center  hover:bg-blue-100 hover:text-blue-900 p-2 hover:rounded-lg">
               <div className="bg-white shadow-2xl w-7 h-7 rounded-full mr-2 flex justify-center items-center">
                 <img src={product.image} alt={product.title} className="w-6 h-6" />
               </div>
-              <div className="flex items-center justify-between cursor-pointer text-sm lg:text-lg font-bold w-80 text-gray-500">
+              <div className="flex items-center cursor-pointer text-sm xl:text-lg font-bold w-60 lg:w-80 text-gray-500">
                 <NavLink className="w-full" to={product.route}>{product.title}</NavLink>
                 <AiOutlineRight />
               </div>
