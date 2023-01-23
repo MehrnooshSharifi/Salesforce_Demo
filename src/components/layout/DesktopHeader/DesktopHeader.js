@@ -16,7 +16,7 @@ const DesktopHeader = () => {
           </div>
           <div className="flex flex-col text-lg justify-center items-center">
             <NavLink
-              to="/"
+              to="/contactUs"
               className="underline cursor-pointer hover:text-blue-600"
             >
               Contact Us

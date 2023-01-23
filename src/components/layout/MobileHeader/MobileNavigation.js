@@ -68,7 +68,7 @@ const MobileNavigation = () => {
             <div className="cursor-pointer py-2 px-3 flex items-center hover:bg-blue-100 hover:rounded-3xl hover:text-blue-600">
               <BsFillTelephoneFill />
               <NavLink
-                to="/"
+                to="/contactUs"
                 className=" ml-1 font-medium cursor-pointer hover:text-blue-600"
               >
                 Contact
