@@ -28,7 +28,7 @@ const MobileHeader = () => {
               contentStyle={{ padding: "0px", border: "none" }}
               arrow={false}
             >
-              <div className="bg-white w-64 h-96 rounded-2xl shadow-2xl mt-5 flex ">
+              <div className="bg-white w-64 h-fit rounded-2xl shadow-2xl mt-3 flex ">
                 <div className="flex h-auto flex-col justify-start items-start m-5 p-2">
                   <div className="text-blue-900 font-bold text-lg mb-4">
                     <h3>Login</h3>

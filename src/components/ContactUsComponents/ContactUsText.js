@@ -3,7 +3,6 @@ import { FaCheck } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 const ContactUsText = () => {
   return (
-    <>
       <div className="flex flex-col justify-start">
         <div className="flex flex-col xl:flex-row xl:items-center">
           <div className="xl:-ml-24">
@@ -20,7 +19,7 @@ const ContactUsText = () => {
             like:
           </p>
         </div>
-        <div className="hidden md:flex md:flex-col  ">
+        <div className="hidden md:flex md:flex-col md:justify-center md:items-start w-80 ">
           <div className="flex items-center">
             <FaCheck className="text-green-700" />
             <p className="ml-1">Our entire product portfolio</p>
@@ -49,7 +48,6 @@ const ContactUsText = () => {
           </NavLink>
         </div>
       </div>
-    </>
   );
 };
 
