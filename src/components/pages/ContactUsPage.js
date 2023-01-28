@@ -10,7 +10,7 @@ const ContactUsPage = () => {
         <ContactUsText />
         <ContactUsForm />
       </div>
-      <div className="hidden md:block md:-mt-56 xl:-mt-[250px]">
+      <div className="hidden md:block md:-mt-56 xl:-mt-[250px]  xl:bg-[#e4f8ff] xl:rounded-t-full ">
         <img src={contactPage} alt="contact" className="" />
       </div>
       <div className="w-full h-60 p-4">

@@ -1,33 +1,34 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
 const initialValues = {
-  firsName: "",
-  lastName: "",
-  jobTitle: "",
-  email: "",
-  // company: "",
-  // employees: "",
-  // phone: "",
-  // region: "Poland",
-  // productIntrest: "",
-  // comments: "",
-  terms: false,
-};
-const validationSchema = Yup.object({
-  firsName: Yup.string().required("Enter your first name"),
-  lastName: Yup.string().required("Enter your last name"),
-  jobTitle: Yup.string().required("Select your tilte"),
-  email: Yup.string()
-    .email("Invalid Email Format")
-    .required("Email address is required"),
-  // company: Yup.string().required("Enter your company name"),
-  // employees: Yup.string().required("Select the number of employees"),
-  // phone: Yup.string().required("Enter a valid phone number"),
-  // productIntrest: Yup.string().required("Select your product interest"),
-  terms: Yup.boolean()
-    .required("The terms and conditions must be accepted.")
-    .oneOf([true], "The terms and conditions must be accepted."),
-});
+    firsName: "",
+    lastName: "",
+    jobTitle: "",
+    email: "",
+    // company: "",
+    // employees: "",
+    // phone: "",
+    // region: "Poland",
+    // productIntrest: "",
+    // comments: "",
+    terms: false,
+  };
+  const validationSchema = Yup.object({
+    firsName: Yup.string().required("Enter your first name"),
+    lastName: Yup.string().required("Enter your last name"),
+    jobTitle: Yup.string().required("Select your tilte"),
+    email: Yup.string()
+      .email("Invalid Email Format")
+      .required("Enter your Email address "),
+    // company: Yup.string().required("Enter your company name"),
+    // employees: Yup.string().required("Select the number of employees"),
+    // phone: Yup.string().required("Enter a valid phone number"),
+    // productIntrest: Yup.string().required("Select your product interest"),
+    terms: Yup.boolean()
+      .required("The terms and conditions must be accepted.")
+      .oneOf([true], "The terms and conditions must be accepted."),
+  });
+
 const ContactUsForm = () => {
   const onSubmit = (values) => {
     console.log(values);
@@ -57,9 +58,6 @@ const ContactUsForm = () => {
                 type="text"
                 name="firsName"
                 className=" border-2 rounded-md py-1 px-3 "
-                // onChange={formik.handleChange}
-                // onBlur={formik.handleBlur}
-                // value={formik.values.firsName}
                 {...formik.getFieldProps("firsName")}
               />
               {formik.touched.firsName && formik.errors.firsName && (
@@ -74,9 +72,6 @@ const ContactUsForm = () => {
                   name="lastName"
                   type="text"
                   className=" border-2 rounded-lg py-1 px-3 "
-                  // onChange={formik.handleChange}
-                  // onBlur={formik.handleBlur}
-                  // value={formik.values.lastName}
                   {...formik.getFieldProps("lastName")}
                 />
                 {formik.touched.lastName && formik.errors.lastName && (
@@ -89,12 +84,9 @@ const ContactUsForm = () => {
             <div className="flex flex-col">
               <label htmlFor="jobTitle">Job Title</label>
               <select
-                className="border-2 rounded-lg py-1 px-3 w-[195px]"
+                className="border-2 rounded-lg py-1 px-3 w-[195px] bg-white"
                 id="jobTitle"
                 name="jobTitle"
-                // value={formik.values.jobTitle}
-                // onChange={formik.handleChange}
-                // onBlur={formik.handleBlur}
                 {...formik.getFieldProps("jobTitle")}
               >
                 <option>Job Title</option>
@@ -113,9 +105,6 @@ const ContactUsForm = () => {
                 name="email"
                 type="text"
                 className=" border-2 rounded-lg py-1 px-3 "
-                // onChange={formik.handleChange}
-                // onBlur={formik.handleBlur}
-                // value={formik.values.email}
                 {...formik.getFieldProps("email")}
               />
               {formik.touched.email && formik.errors.email && (

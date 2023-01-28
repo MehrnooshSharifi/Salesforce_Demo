@@ -5,9 +5,9 @@ const ContactUsText = () => {
   return (
       <div className="flex flex-col justify-start">
         <div className="flex flex-col xl:flex-row xl:items-center">
-          <div className="xl:-ml-24">
+          <NavLink to="/" className="xl:-ml-24 cursor-pointer">
             <img src={logo} alt="logo" />
-          </div>
+          </NavLink>
           <div className="text-blue-900 font-bold text-2xl">
             <h2>Question?We're here to help.</h2>
           </div>
