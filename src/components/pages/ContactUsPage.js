@@ -1,7 +1,7 @@
 import Footer from "../layout/Footer";
 import contactPage from "../../assets/images/contact-footer-au.png";
-import ContactUsText from "../ContactUsComponents/ContactUsText";
-import ContactUsForm from "../ContactUsComponents/ContactForm";
+import ContactUsText from "../ContactUs/ContactUsText";
+import ContactUsForm from "../ContactUs/ContactForm";
 import seal from "../../assets/images/seal.svg";
 const ContactUsPage = () => {
   return (

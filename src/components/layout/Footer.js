@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 import { FaCheck, FaTimes } from "react-icons/fa";
 const Footer = () => {
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-blue-900 w-full h-36 text-white flex justify-start items-center">
-      <div className="border border-white px-4 py-2 rounded-md flex justify-center items-center cursor-pointer ml-8">
+    <div className="fixed bottom-0 left-0 right-0 bg-blue-900 w-full md:h-36 text-white flex flex-col md:flex-row justify-start items-center">
+      <div className=" text-xs md:text-base mt-2 md:mt-0 mb-2 md:mb-0 border border-white px-4 py-2 rounded-md flex justify-center items-center cursor-pointer ml-8">
         <TbWorld className="w-6 h-6" />
         <span className="ml-2 mr-2">WORLDWIDE</span>
         <FaAngleUp className="" />
@@ -22,7 +22,7 @@ const Footer = () => {
           SFDC Australia Pty Ltd. ABN 91 109 182 989. Level 12, Tower 3 Darling
           Park, 201 Sussex Street, Sydney NSW 2000, Australia
         </p>
-        <div className="flex justify-between mt-2">
+        <div className=" flex flex-wrap justify-between mb-2 md:mb-0 md:mt-2 mr-2 ">
           <NavLink className="text-blue-500 hover:text-white underline">
             Legal
           </NavLink>

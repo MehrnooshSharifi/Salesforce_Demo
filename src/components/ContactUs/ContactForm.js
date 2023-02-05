@@ -57,7 +57,7 @@ const ContactUsForm = () => {
                 id="firsName"
                 type="text"
                 name="firsName"
-                className=" border-2 rounded-md py-1 px-3 "
+                className=" border-2 rounded-md py-1 px-3"
                 {...formik.getFieldProps("firsName")}
               />
               {formik.touched.firsName && formik.errors.firsName && (

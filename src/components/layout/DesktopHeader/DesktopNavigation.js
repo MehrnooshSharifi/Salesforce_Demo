@@ -39,7 +39,7 @@ const DesktopNavigation = () => {
               arrow={false}
               key={item.id}
             >
-              <div className=" bg-gray-50 shadow-lg rounded-md w-auto h-72 mt-6 p-4 -ml-36 overflow-auto ">
+              <div className=" bg-gray-50 shadow-lg rounded-md w-auto h-72 mt-3 p-4 -ml-36 overflow-auto ">
                 {item.component}
               </div>
             </Popup>

@@ -42,8 +42,8 @@ const MobileNavigation = () => {
             return (
               <Popup
                 trigger={
-                  <button className="cursor-pointer text-lg font-bold hover:text-blue-600 py-2">
-                    <div className="flex items-center justify-between w-50 text-lg ">
+                  <button className="  cursor-pointer  font-bold hover:text-blue-600 py-2">
+                    <div className="flex items-center justify-between text-sm ">
                       <div>{item.name}</div>
                       <AiOutlineRight/>
                     </div>
@@ -64,8 +64,8 @@ const MobileNavigation = () => {
               </Popup>
             );
           })}
-          <div className="mt-6 text-lg flex flex-col -ml-3 ">
-            <div className="cursor-pointer py-2 px-3 flex items-center hover:bg-blue-100 hover:rounded-3xl hover:text-blue-600">
+          <div className=" text-sm flex flex-col -ml-3  py-9 ">
+            <div className="cursor-pointer py-1 px-3 flex items-center hover:bg-blue-100 hover:rounded-3xl hover:text-blue-600">
               <BsFillTelephoneFill />
               <NavLink
                 to="/contactUs"
@@ -74,15 +74,15 @@ const MobileNavigation = () => {
                 Contact
               </NavLink>
             </div>
-            <div className="cursor-pointer py-2 px-3 flex items-center hover:bg-blue-100 hover:rounded-3xl hover:text-blue-600">
+            <div className="cursor-pointer py-1 px-3 flex items-center hover:bg-blue-100 hover:rounded-3xl hover:text-blue-600">
               <FaUserAlt />
               <NavLink className="ml-1 font-medium">Login</NavLink>
             </div>
-            <div className="cursor-pointer py-2 px-3 flex items-center hover:bg-blue-100 hover:rounded-3xl hover:text-blue-600">
+            <div className="cursor-pointer py-1 px-3 flex items-center hover:bg-blue-100 hover:rounded-3xl hover:text-blue-600">
               <TbWorld className="w-6 h-6  hover:text-blue-600 -ml-1" />
               <NavLink className=" font-medium">Region</NavLink>
             </div>
-            <span className="text-sm flex justify-center mt-2 font-bold">09102456878 (IR)</span>
+            <span className="text-sm flex justify-center mt-2 font-bold p-4">09102456878 (IR)</span>
           </div>
         </div>
       ) : (

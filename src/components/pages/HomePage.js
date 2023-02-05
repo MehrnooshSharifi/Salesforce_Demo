@@ -1,7 +1,7 @@
 import clude from "../../assets/images/sfwt23_logo.png";
 import artist from "../../assets/images/sfl-lp-artist-section-nile-rodgers.png";
 import { Link } from "react-router-dom";
-import DeliverSection from "../HomePageComponents/Deliver";
+import DeliverSection from "../HomePage/Deliver";
 import Layout from "../layout/Layout";
 const HomePage = () => {
   return (

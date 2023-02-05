@@ -3,15 +3,16 @@ import { BiSearch } from "react-icons/bi";
 import { FaUserAlt } from "react-icons/fa";
 import Popup from "reactjs-popup";
 import LoginPopup from "../../LoginPopup/LoginPopup";
+import { NavLink } from "react-router-dom";
 const MobileHeader = () => {
   return (
     <>
       <header className="xl:hidden flex w-full h-14 justify-between items-center px-8 sticky top-0 bg-white min-w-fit ">
         <MobileNavigation />
         <div className="flex justify-end w-1/2 ml-7">
-          <div className=" py-2 px-2 hover:rounded-full hover:bg-blue-100 flex justify-center items-center cursor-pointer ">
+          <NavLink to="/search" className=" py-2 px-2 hover:rounded-full hover:bg-blue-100 flex justify-center items-center cursor-pointer ">
             <BiSearch className="w-4 h-4 hover:text-blue-600" />
-          </div>
+          </NavLink>
           <div className="cursor-pointer py-2 px-2 flex items-center hover:bg-blue-100 hover:rounded-3xl hover:text-blue-600 ">
             <Popup
               trigger={
